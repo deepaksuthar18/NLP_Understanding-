@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NER Visualization</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.entity {
+    padding: 4px 6px;
+    margin: 2px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.label {
+    font-size: 10px;
+    background: black;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+.legend {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.box {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Named Entity Recognition (spaCy)</h2>
+
+<div class="legend">
+    <div class="legend-item"><div class="box" style="background:#7aecec"></div>PERSON</div><div class="legend-item"><div class="box" style="background:#bfeeb7"></div>ORG</div><div class="legend-item"><div class="box" style="background:#feca74"></div>GPE</div><div class="legend-item"><div class="box" style="background:#ffb347"></div>LOC</div><div class="legend-item"><div class="box" style="background:#aa9cfc"></div>NORP</div><div class="legend-item"><div class="box" style="background:#ff9561"></div>DATE</div><div class="legend-item"><div class="box" style="background:#ffadad"></div>TIME</div><div class="legend-item"><div class="box" style="background:#ffd700"></div>MONEY</div><div class="legend-item"><div class="box" style="background:#d4a5a5"></div>QUANTITY</div><div class="legend-item"><div class="box" style="background:#ffcccb"></div>PERCENT</div><div class="legend-item"><div class="box" style="background:#cdb4db"></div>CARDINAL</div><div class="legend-item"><div class="box" style="background:#caffbf"></div>PRODUCT</div><div class="legend-item"><div class="box" style="background:#fdffb6"></div>WORK_OF_ART</div><div class="legend-item"><div class="box" style="background:#bdb2ff"></div>LAW</div><div class="legend-item"><div class="box" style="background:#ffc6ff"></div>EVENT</div><div class="legend-item"><div class="box" style="background:#a0c4ff"></div>FAC</div><div class="legend-item"><div class="box" style="background:#9bf6ff"></div>LANGUAGE</div><div class="legend-item"><div class="box" style="background:#eaeaea"></div>ORDINAL</div>
+</div>
+
+<hr>
+
+<div>
+
+ 
+        <span class="entity" style="background:#bfeeb7;">
+            Artificial
+            <span class="label">ORG</span>
+        </span>
+        
+        <span class="entity" style="background:#bfeeb7;">
+            Intelligence
+            <span class="label">ORG</span>
+        </span>
+        has rapidly transformed modern technology . 
+ In 
+        <span class="entity" style="background:#ff9561;">
+            2023
+            <span class="label">DATE</span>
+        </span>
+        , 
+        <span class="entity" style="background:#bfeeb7;">
+            OpenAI
+            <span class="label">ORG</span>
+        </span>
+        released advanced 
+        <span class="entity" style="background:#feca74;">
+            AI
+            <span class="label">GPE</span>
+        </span>
+        models such as 
+        <span class="entity" style="background:#7aecec;">
+            GPT-4
+            <span class="label">PERSON</span>
+        </span>
+        , which gained 
+ global attention for their ability to understand and generate human language . 
+ 
+        <span class="entity" style="background:#7aecec;">
+            Sam
+            <span class="label">PERSON</span>
+        </span>
+        
+        <span class="entity" style="background:#7aecec;">
+            Altman
+            <span class="label">PERSON</span>
+        </span>
+        , the CEO of 
+        <span class="entity" style="background:#bfeeb7;">
+            OpenAI
+            <span class="label">ORG</span>
+        </span>
+        , announced partnerships with companies like 
+ 
+        <span class="entity" style="background:#bfeeb7;">
+            Microsoft
+            <span class="label">ORG</span>
+        </span>
+        , investing 
+        <span class="entity" style="background:#ffd700;">
+            over
+            <span class="label">MONEY</span>
+        </span>
+        
+        <span class="entity" style="background:#ffd700;">
+            10
+            <span class="label">MONEY</span>
+        </span>
+        
+        <span class="entity" style="background:#ffd700;">
+            billion
+            <span class="label">MONEY</span>
+        </span>
+        
+        <span class="entity" style="background:#ffd700;">
+            dollars
+            <span class="label">MONEY</span>
+        </span>
+        in 
+        <span class="entity" style="background:#feca74;">
+            AI
+            <span class="label">GPE</span>
+        </span>
+        research and infrastructure . 
+ Major technology companies such as 
+        <span class="entity" style="background:#bfeeb7;">
+            Google
+            <span class="label">ORG</span>
+        </span>
+        , 
+        <span class="entity" style="background:#bfeeb7;">
+            Amazon
+            <span class="label">ORG</span>
+        </span>
+        , and 
+        <span class="entity" style="background:#bfeeb7;">
+            Meta
+            <span class="label">ORG</span>
+        </span>
+        are also heavily 
+ investing in 
+        <span class="entity" style="background:#feca74;">
+            AI
+            <span class="label">GPE</span>
+        </span>
+        - powered solutions . 
+ In 
+        <span class="entity" style="background:#feca74;">
+            India
+            <span class="label">GPE</span>
+        </span>
+        , organizations like 
+        <span class="entity" style="background:#bfeeb7;">
+            ISRO
+            <span class="label">ORG</span>
+        </span>
+        and 
+        <span class="entity" style="background:#feca74;">
+            IIT
+            <span class="label">GPE</span>
+        </span>
+        
+        <span class="entity" style="background:#feca74;">
+            Delhi
+            <span class="label">GPE</span>
+        </span>
+        are using AI for space research 
+ and academic innovation . 
+ 
+        <span class="entity" style="background:#bfeeb7;">
+            The
+            <span class="label">ORG</span>
+        </span>
+        
+        <span class="entity" style="background:#bfeeb7;">
+            United
+            <span class="label">ORG</span>
+        </span>
+        
+        <span class="entity" style="background:#bfeeb7;">
+            Nations
+            <span class="label">ORG</span>
+        </span>
+        has raised concerns about the ethical use of 
+        <span class="entity" style="background:#feca74;">
+            AI
+            <span class="label">GPE</span>
+        </span>
+        and data privacy . 
+ On 
+        <span class="entity" style="background:#ff9561;">
+            January
+            <span class="label">DATE</span>
+        </span>
+        
+        <span class="entity" style="background:#ff9561;">
+            15
+            <span class="label">DATE</span>
+        </span>
+        
+        <span class="entity" style="background:#ff9561;">
+            ,
+            <span class="label">DATE</span>
+        </span>
+        
+        <span class="entity" style="background:#ff9561;">
+            2024
+            <span class="label">DATE</span>
+        </span>
+        , a global 
+        <span class="entity" style="background:#feca74;">
+            AI
+            <span class="label">GPE</span>
+        </span>
+        summit was held in 
+        <span class="entity" style="background:#feca74;">
+            Davos
+            <span class="label">GPE</span>
+        </span>
+        , 
+        <span class="entity" style="background:#feca74;">
+            Switzerland
+            <span class="label">GPE</span>
+        </span>
+        . 
+ 
+</div>
+
+</body>
+</html>
